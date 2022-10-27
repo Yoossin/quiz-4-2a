@@ -41,7 +41,7 @@ int main(int argc, char** argv) {
         t_vec.push_back(thread(response));
     }
 
-    for (int i=0; i < t_vec.size(); i++) {
+    for (unsigned int i=0; i < t_vec.size(); i++) {
         t_vec.at(i).join();
     }
 
